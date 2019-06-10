@@ -30,7 +30,7 @@ public class RemovedNumbers {
     public static List<long[]> findNumbersHeRemoved(long n) {
         List<long[]> numbersHeRemoved = new ArrayList<>();
         for (int i = (int)n; i > 0 ; i--) {
-            double otherNumber = (SUM_OF_NUMBERS - i) / (double)(i + 1);
+            double otherNumber = (double)(SUM_OF_NUMBERS - i) / (double)(i + 1);
 
             if (otherNumber < n && otherNumber % 1 == 0) {
                 numbersHeRemoved.add(new long[]{(long)otherNumber, i});

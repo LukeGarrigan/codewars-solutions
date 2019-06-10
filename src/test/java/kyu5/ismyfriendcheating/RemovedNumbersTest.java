@@ -47,6 +47,12 @@ public class RemovedNumbersTest {
         assertEquals(2, RemovedNumbers.removedNumbers(290).size());
     }
 
+    @Test
+    public void theirTestValueThatFails() {
+        assertEquals(2, RemovedNumbers.removedNumbers(1000003).size());
+
+    }
+
 
 
 }
