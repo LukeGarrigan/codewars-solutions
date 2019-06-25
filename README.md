@@ -11,6 +11,7 @@ A repo with Java solutions to katas from Codewars.
 - [x] Positions Average
 - [x] Tribonacci 
 - [x] Spin Words
+- [x] Your Order Please
 
 ## 7 Kyus:
 - [x] How Many Arguments [checkbox:checked]
