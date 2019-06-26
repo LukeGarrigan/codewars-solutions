@@ -15,7 +15,7 @@ A repo with Java solutions to katas from Codewars.
 - [x] Your Order Please
 
 ## 7 Kyus:
-- [x] How Many Arguments [checkbox:checked]
+- [x] How Many Arguments
 
 
 
