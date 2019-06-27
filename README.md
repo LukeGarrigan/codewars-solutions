@@ -13,6 +13,7 @@ A repo with Java solutions to katas from Codewars.
 - [x] Tribonacci 
 - [x] Spin Words
 - [x] Your Order Please
+- [x] Who likes it?
 
 ## 7 Kyus:
 - [x] How Many Arguments
