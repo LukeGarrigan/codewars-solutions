@@ -14,6 +14,7 @@ A repo with Java solutions to katas from Codewars.
 - [x] Spin Words
 - [x] Your Order Please
 - [x] Who likes it?
+- [x] Sum of parts
 
 ## 7 Kyus:
 - [x] How Many Arguments
