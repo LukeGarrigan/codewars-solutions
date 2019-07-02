@@ -1,4 +1,4 @@
-package kyu7.howmanyarguments;
+package kyu7.howmanyargument;
 
 public class Arguments {
 

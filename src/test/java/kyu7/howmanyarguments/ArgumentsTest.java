@@ -1,5 +1,6 @@
 package kyu7.howmanyarguments;
 
+import kyu7.howmanyargument.Arguments;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
