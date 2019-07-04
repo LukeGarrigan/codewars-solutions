@@ -9,29 +9,37 @@ public class RevRot {
     public static String revRot(String strng, int sz) {
 
         if (sz <= 0 || sz > strng.length()) return "";
-        int[] splitNumbers = getChunks(strng, sz);
+        String[] splitNumbers = getChunks(strng, sz);
 
         for (int i = 0; i < splitNumbers.length; i++) {
-            int splitNumber = splitNumbers[i];
-            if (getSumOfCubes(splitNumber) % 2 == 0) {
-                splitNumbers[i] = reverseNumber(splitNumber);
-            } else {
+            String splitNumber = splitNumbers[i];
+
+            try {
+                if (getSumOfCubes(Integer.parseInt(splitNumber)) % 2 == 0) {
+                    splitNumbers[i] = reverseNumber(splitNumber);
+                } else {
+                    splitNumbers[i] = rotateToLeftByOne(splitNumber);
+                }
+
+            } catch(Exception exception) {
                 splitNumbers[i] = rotateToLeftByOne(splitNumber);
             }
+
+
         }
         return getConcatenatedNumbers(splitNumbers);
     }
 
-    static String getConcatenatedNumbers(int[] splitNumbers) {
+    static String getConcatenatedNumbers(String[] splitNumbers) {
         StringBuilder sb = new StringBuilder();
 
-        for (int splitNumber : splitNumbers) {
+        for (String splitNumber : splitNumbers) {
             sb.append(splitNumber);
         }
         return sb.toString();
     }
 
-    static int rotateToLeftByOne(int splitNumber) {
+    static String rotateToLeftByOne(String splitNumber) {
         String original = String.valueOf(splitNumber);
 
         StringBuilder sb = new StringBuilder(original.length());
@@ -42,22 +50,22 @@ public class RevRot {
 
         sb.append(original.charAt(0));
 
-        return Integer.parseInt(sb.toString());
+        return sb.toString();
 
     }
 
-    static int reverseNumber(int splitNumber) {
-        return Integer.parseInt(new StringBuilder(String.valueOf(splitNumber)).reverse().toString());
+    static String reverseNumber(String splitNumber) {
+        return new StringBuilder(String.valueOf(splitNumber)).reverse().toString();
     }
 
-    static int[] getChunks(String strng, int sz) {
-        int[] splitNumbers = new int[strng.length() / sz];
+    static String[] getChunks(String strng, int sz) {
+        String[] splitNumbers = new String[strng.length() / sz];
 
         int arrayPos = 0;
         StringBuilder numberAsString = new StringBuilder();
         for (int i = 0; i < strng.length(); i++) {
             if (i % sz == 0 && i != 0) {
-                splitNumbers[arrayPos] = Integer.parseInt(numberAsString.toString());
+                splitNumbers[arrayPos] = numberAsString.toString();
                 numberAsString = new StringBuilder();
                 arrayPos++;
             }

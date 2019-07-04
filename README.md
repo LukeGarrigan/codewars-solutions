@@ -15,7 +15,7 @@ A repo with Java solutions to katas from Codewars.
 - [x] Your Order Please
 - [x] Who likes it?
 - [x] Sum of parts
-- [ ] Reverse of rotate
+- [ ] Reverse or rotate
 
 ## 7 Kyus:
 - [x] How Many Arguments
