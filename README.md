@@ -1,6 +1,8 @@
 # Codewars Solutions
 
 A repo with Java solutions to katas from Codewars.
+## 4 Kyus:
+- [ ] Next bigger number with the same digits
 
 ## 5 Kyus:
 - [x] Is My Friend Cheating 
